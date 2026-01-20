@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="cms.css">
+</head>
+<body>
+
+  <h2>Book Appointment</h2>
+  <form id="appointmentForm">
+    <input type="text" id="patientName" readonly><br><br>
+    <select id="doctorSelect"><br><br>
+      <option>Dr. Smith</option><br><br>
+      <option>Dr. Lee</option><br><br>
+    </select>
+    <input type="date" id="date"><br><br>
+    <input type="time" id="time"><br><br>
+    <textarea id="reason" placeholder="Reason"></textarea><br><br>
+    <button type="submit">Book</button><br><br>
+  </form>
+
+  <h3>My Appointments</h3>
+  <table id="appointmentTable">
+    <tr><th>Doctor</th><th>Date</th><th>Time</th><th>Reason</th><th>Action</th></tr>
+  </table>
+
+</body>
+<script src="cms.js"></script>
+</html>
